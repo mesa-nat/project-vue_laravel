@@ -113,30 +113,7 @@ const featuredFruits = ref([
     description: 'Fresh citrus oranges bursting with vitamin C and natural sweetness. Perfect for juice.',
     benefits: ['Vitamin C', 'Folate', 'Citrus']
   },
-  {
-    id: 4,
-    name: 'Sweet Strawberries',
-    price: 4.50,
-    emoji: '🍓',
-    description: 'Delicious strawberries packed with antioxidants and natural sweetness.',
-    benefits: ['Antioxidants', 'Vitamin C', 'Manganese']
-  },
-  {
-    id: 5,
-    name: 'Fresh Grapes',
-    price: 3.80,
-    emoji: '🍇',
-    description: 'Sweet and juicy grapes perfect for snacking or making fresh juice.',
-    benefits: ['Resveratrol', 'Vitamin K', 'Antioxidants']
-  },
-  {
-    id: 6,
-    name: 'Tropical Kiwi',
-    price: 2.90,
-    emoji: '🥝',
-    description: 'Exotic kiwi fruits with unique taste and loaded with vitamin C and fiber.',
-    benefits: ['Vitamin C', 'Fiber', 'Vitamin K']
-  }
+ 
 ])
 
 // Fetch names from API and update the names only
@@ -159,7 +136,7 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped>
+<style >
 .home-page {
   min-height: 100vh;
 }
@@ -420,61 +397,6 @@ onMounted(async () => {
   line-height: 1.6;
 }
 
-/* CTA Section */
-.cta-section {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
 
-.cta-content {
-  text-align: center;
-}
 
-.cta-content h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.cta-content p {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  opacity: 0.9;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cta-btn {
-  padding: 15px 35px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-}
-
-.cta-btn.primary {
-  background: white;
-  color: #667eea;
-  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3);
-}
-
-.cta-btn.primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
-  text-decoration: none;
-  color: #667eea;
-}
-
-.cta-btn.secondary {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-}
 </style>
